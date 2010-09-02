@@ -1,0 +1,12 @@
+AC_INIT([csharker], [1.0], [omever@gmail.com])
+
+AC_PROG_CXX
+AX_LIB_ORACLE_OCI()
+
+AC_CONFIG_AUX_DIR(config)
+AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_HEADERS(config.h)
+AM_INIT_AUTOMAKE([1.9 foreign])
+AM_INIT_AUTOMAKE([subdir-objects])
+
+AC_OUTPUT
